@@ -133,7 +133,7 @@ columns=fullflexible
 \renewcommand{\thetable}{\theenumi}
 Download all python codes from 
 \begin{lstlisting}
-https://github.com/Sekharjala/Assignment_3/code
+https://github.com/Sekharjala/Assignment_3/codes
 \end{lstlisting}
 %
 and pdf from 
@@ -144,14 +144,12 @@ https://github.com/Sekharjala/Assignment_3/Assignment3.pdf
 %
 \section{Quadratic Forms Q:2.5}
 Question :
-Find the area of the region in the first quadrant enclosed by x-axis, line $\myvec{1 & -\sqrt{3}}\vec{x} =0$ and the circle $\vec{x}^T\vec{x}=4
-\begin{align}
-******Equation_in_Question**********
-\end{align}
+Find the area of the region in the first quadrant enclosed by x-axis, line $\myvec{1 & -\sqrt{3}}\vec{x} =0$ and the circle \vec{x}^T\vec{x}=4
+
 \section{Solution}
 Given equation of a circle is 
     \begin{align}
-        \vec{x}^{T} \vec{x} =4
+        \vec{x}^{T} \vec{x} =4 \label{eq:A}
     \end{align}
 can be expressed as,
 \begin{align}
@@ -189,11 +187,26 @@ Using equation \eqref{eq:eq3} and \eqref{eq:eq5},the area of the sector is obtai
 \label{fig:1}
 \end{figure}
 Point $\vec{A}$ = \myvec{2 \\ 0} \\
-Point $\vec{B}$ is on the line \myvec{1&-\sqrt{3}}\vec{x}=0
+Point $\vec{B}$ is on the line \myvec{1&-\sqrt{3}}\vec{x}=0 can be expressed as
 \begin{align}
-    \vec{B} &=\myvec{r \cos{\theta}  \\  r \sin{\theta}  } \\ 
-    &= \myvec{2 \cos{30 \degree} \\ 2 \sin{30 \degree}} \\
-    &= \myvec{\sqrt{3} \\ 1}
+   \vec{x}=\vec{p}+\lambda \vec{m} 
 \end{align}
-
+ Where \vec{p} is a vector and \vec{m} is Directional vector of the line
+\begin{align}
+    \vec{x}=\myvec{0 \\ 0}+ \lambda \myvec{\sqrt{3} \\ 1} \label{eq:eq7}
+\end{align}
+from \eqref{eq:A} substituting value of \vec{x} we get
+\begin{align}
+{\myvec{{\myvec{0 \\ 0}+ \lambda \myvec{\sqrt{3} \\ 1}}} ^T \myvec{ \myvec{0 \\ 0}+ \lambda \myvec{\sqrt{3} \\ 1}}} =4 \\
+\lambda \myvec{\sqrt{3} & 1} \times \lambda \myvec{\sqrt{3} \\ 1}=4 \\
+\lambda ^2  \myvec{4} =4 \\    
+\lambda =1 \label{eq:eq8}
+\end{align}
+substitute \eqref{eq:eq8} in \eqref{eq:eq7} point on circle
+\begin{align}
+    \vec{x}=\myvec{0 \\ 0}+ \lambda \myvec{\sqrt{3} \\ 1} \\
+    \vec{x}=\myvec{0 \\ 0}+ 1 \myvec{\sqrt{3} \\ 1} \\
+    \vec{x}= \myvec{\sqrt{3} \\ 1}
+\end{align}
+so, B =\myvec{\sqrt{3} \\ 1}
 \end{document}
