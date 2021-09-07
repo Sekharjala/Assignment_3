@@ -164,7 +164,10 @@ Comparing equation \eqref{eq:eq1} with the circle equation given,
     r=\sqrt{\vec{u}^{T}\vec{u}-f} = \sqrt{4}\\
     r=2 \label{eq:eq3}
 \end{align}
-From equation \eqref{eq:eq3}, the point at which circle touches $x$-axis is \myvec{2\\0}.\\
+From equation \eqref{eq:eq3}, circle is having center at \vec{0 \\ 0} with radius of 2 units.The equation of the diagnal is  $x$-axis is and the directional vector is 
+\begin{align}
+    \myvec{2 \\ 0} - \myvec{0 \\ 0} = \myvec{2 \\ 0}    
+\end{align}
 The direction vector of line formed with \vec{O} and \vec{A} is  $\myvec{2\\0}$.\\
 The direction vector of the given line 
 \begin{align}
@@ -186,27 +189,51 @@ Using equation \eqref{eq:eq3} and \eqref{eq:eq5},the area of the sector is obtai
 \caption{Area Under the Curve & circle  }
 \label{fig:1}
 \end{figure}
-Point $\vec{A}$ = \myvec{2 \\ 0} \\
-Point $\vec{B}$ is on the line \myvec{1&-\sqrt{3}}\vec{x}=0 can be expressed as
+Ref:Tangents & Normals \\
+The points of intersection of the line 
 \begin{align}
-   \vec{x}=\vec{p}+\lambda \vec{m} 
+    L:  \vec{x} = \vec{a} + \lambda \vec{m} 
 \end{align}
- Where \vec{p} is a vector and \vec{m} is Directional vector of the line
+touches a conic section at one point $\vec{q}$ then
 \begin{align}
-    \vec{x}=\myvec{0 \\ 0}+ \lambda \myvec{\sqrt{3} \\ 1} \label{eq:eq7}
+\vec{m}^T(\vec{V} \vec{q}+\vec{u}) = 0  \label{eq:EqP}
 \end{align}
-from \eqref{eq:A} substituting value of \vec{x} we get
+From equation \eqref{eq:A} $\Vec{V}$ is \myvec{1&0 \\ 0&1} \\
+from eq \eqref{eq:A} and \eqref{eq:EqP} point of intersection is $\Vec{A}$ is given by
 \begin{align}
-{\myvec{{\myvec{0 \\ 0}+ \lambda \myvec{\sqrt{3} \\ 1}}} ^T \myvec{ \myvec{0 \\ 0}+ \lambda \myvec{\sqrt{3} \\ 1}}} =4 \\
-\lambda \myvec{\sqrt{3} & 1} \times \lambda \myvec{\sqrt{3} \\ 1}=4 \\
-\lambda ^2  \myvec{4} =4 \\    
-\lambda =1 \label{eq:eq8}
+    \myvec{0 & 2} (\myvec{1&0\\0&1}\vec{A}+\vec{u})&=0 \\
+    \myvec{0&2}\vec{A}&=0 \\
+    \implies \vec{A}&=\myvec{2\\ 0} 
 \end{align}
-substitute \eqref{eq:eq8} in \eqref{eq:eq7} point on circle
+similarly \\
+from eq \eqref{eq:eqA} and \eqref{eq:EqP} point of intersection is \Vec{B} is given by
 \begin{align}
-    \vec{x}=\myvec{0 \\ 0}+ \lambda \myvec{\sqrt{3} \\ 1} \\
-    \vec{x}=\myvec{0 \\ 0}+ 1 \myvec{\sqrt{3} \\ 1} \\
-    \vec{x}= \myvec{\sqrt{3} \\ 1}
+    \myvec{1 & -\sqrt{3}} (\myvec{1&0\\0&1}\vec{B}+\vec{u})&=0 \\
+    \myvec{1 & -\sqrt{3}}\vec{B}&=0 \\
+    \implies \vec{B}&=\myvec{\sqrt{3} \\ 1 } 
 \end{align}
+% Point $\vec{A}$ = \myvec{2 \\ 0} \\
+% Point $\vec{B}$ is on the line \myvec{1&-\sqrt{3}}\vec{x}=0 can be expressed as
+% \begin{align}
+%   \vec{x}=\vec{p}+\lambda \vec{m} 
+% \end{align}
+%  Where \vec{p} is a vector and \vec{m} is Directional vector of the line
+% \begin{align}
+%     \vec{x}=\myvec{0 \\ 0}+ \lambda \myvec{\sqrt{3} \\ 1} \label{eq:eq7}
+% \end{align}
+% from \eqref{eq:A} substituting value of \vec{x} we get
+% \begin{align}
+% {\myvec{{\myvec{0 \\ 0}+ \lambda \myvec{\sqrt{3} \\ 1}}} ^T \myvec{ \myvec{0 \\ 0}+ \lambda \myvec{\sqrt{3} \\ 1}}} =4 \\
+% \lambda \myvec{\sqrt{3} & 1} \times \lambda \myvec{\sqrt{3} \\ 1}=4 \\
+% \lambda ^2  \myvec{4} =4 \\    
+% \lambda =1 \label{eq:eq8}
+% \end{align}
+% substitute \eqref{eq:eq8} in \eqref{eq:eq7} point on circle
+% \begin{align}
+%     \vec{x}=\myvec{0 \\ 0}+ \lambda \myvec{\sqrt{3} \\ 1} \\
+%     \vec{x}=\myvec{0 \\ 0}+ 1 \myvec{\sqrt{3} \\ 1} \\
+%     \vec{x}= \myvec{\sqrt{3} \\ 1}
+% \end{align}
 so, B =\myvec{\sqrt{3} \\ 1}
+
 \end{document}
