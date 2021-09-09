@@ -166,7 +166,7 @@ Comparing equation \eqref{eq:eq1} with the circle equation given,
 \end{align}
 From equation \eqref{eq:eq3}, circle is having center at \vec{0 \\ 0} with radius of 2 units.The equation of the diagnal is  $x$-axis is and the directional vector is 
 \begin{align}
-    \myvec{2 \\ 0} - \myvec{0 \\ 0} = \myvec{2 \\ 0}    
+    \myvec{2 \\ 0} - \myvec{0 \\ 0} = \myvec{2 \\ 0}  \label{eq:norm1}  
 \end{align}
 The direction vector of line formed with \vec{O} and \vec{A} is  $\myvec{2\\0}$.\\
 The direction vector of the given line 
@@ -175,7 +175,7 @@ The direction vector of the given line
 \end{align}
 The angle between line \eqref{eq:eqA} with \vec{OA} ,
 \begin{align}
-    \cos\theta = \frac{\myvec{\sqrt{3}&1}\myvec{2\\0}}{\norm{\myvec{\sqrt{3}&1}}\norm{\myvec{2&0}}}=\frac{\sqrt{3}}{2} \label{eq:solutions/7/eq:eq4}\\
+    \cos\theta = \frac{\myvec{\sqrt{3}&1}\myvec{2\\0}}{\norm{\myvec{\sqrt{3}&1}}\norm{\myvec{2&0}}}=\frac{\sqrt{3}}{2} \label{eq:eq4}\\
     \theta = 30^{\degree}\label{eq:eq5}
 \end{align}
 Using equation \eqref{eq:eq3} and \eqref{eq:eq5},the area of the sector is obtained as,
@@ -189,29 +189,68 @@ Using equation \eqref{eq:eq3} and \eqref{eq:eq5},the area of the sector is obtai
 \caption{Area Under the Curve & circle  }
 \label{fig:1}
 \end{figure}
-Ref:Tangents & Normals \\
-If a line 
+Ref:Tangents and Normal \\
+If $\vec{V}^{-1}$ exists, given the normal vector $\vec{n}$, the tangent points of contact to \eqref{eq:A} are given by
 \begin{align}
-    L:  \vec{x} = \vec{a} + \lambda \vec{m} 
+    \vec{q}_i &= \vec{V}^{-1}\brak{\kappa_i \vec{n}-\vec{u}}, i = 1,2
+\\
+\text{where }\kappa_i &= \pm \sqrt{
+\frac{\vec{u}^T\vec{V}^{-1}\vec{u}-f}{\vec{n}^T\vec{V}^{-1}\vec{n}}}
+\label{eq:eqConics}
 \end{align}
-touches a conic section at one point $\vec{q}$ then
+$\vec{V}^{-1}$ exists 
 \begin{align}
-\vec{m}^T(\vec{V} \vec{q}+\vec{u}) = 0  \label{eq:EqP}
+    \vec{V}^{-1} = \frac{1}{1-0} \myvec{1&0 \\ 0&1}\\
+    =  \myvec{1&0 \\ 0&1}
 \end{align}
-From equation \eqref{eq:A} $\Vec{V}$ is \myvec{1&0 \\ 0&1}  and $\vec{u}$=\myvec{0 \\ 0}\\
-From equation of x-axis, \eqref{eq:A} and \eqref{eq:EqP} point of intersection is $\Vec{A}$ is given by
+from \eqref{eq:eqConics} and \eqref{eq:norm1}
 \begin{align}
-    \myvec{0 & 2} (\myvec{1&0\\0&1}\vec{A}+\vec{u})&=0 \\
-    \myvec{0&2}\vec{A}&=0 \\
-    \implies \vec{A}&=\myvec{2\\ 0} 
+\kappa_i = \pm \sqrt{
+\frac{\myvec{0&0}\myvec{1&0\\0&1}\myvec{0\\0}+4}{\myvec{2&0}\myvec{1&0\\0&1}\myvec{2\\0}}}\\
+    \kappa_i = \pm 1  \\
+    \vec{q}_i = \myvec{1&0 \\0&1} (\pm 1 \myvec{2\\0}) \\
+    \implies \vec{q}_1 =\myvec{2 \\0} ,
+    \vec{q}_2 =\myvec{-2\\ 0}
 \end{align}
-similarly \\
-from eq \eqref{eq:eqA},\eqref{eq:A} and \eqref{eq:EqP} point of intersection is \Vec{B} is given by
+$\vec{q}_1 $ lies in $1^{st}$ Quadrant 
 \begin{align}
-    \myvec{1 & -\sqrt{3}} (\myvec{1&0\\0&1}\vec{B}+\vec{u})&=0 \\
-    \myvec{1 & -\sqrt{3}}\vec{B}&=0 \\
-    \implies \vec{B}&=\myvec{\sqrt{3} \\ 1 } 
+    So, \vec{A}=\myvec{2\\0}
 \end{align}
+Similarly
+from \eqref{eq:eqConics} and \eqref{eq:eqA}
+\begin{align}
+\kappa_i = \pm \sqrt{\frac{\myvec{0&0} \myvec{1&0\\0&1} \myvec{0\\0}+4} {\myvec{\sqrt{3} & 1}\myvec{1&0\\0&1}\myvec{\sqrt{3} \\ 1}}}  \\
+    \kappa_i = \pm 1  \\
+    \vec{q}_i = \myvec{1&0 \\ 0&1} (\pm 1 \myvec{\sqrt{3}\\1}) \\
+    \vec{q}_1   = \myvec {\sqrt{3} \\1} 
+    \vec{q}_2 = \myvec{-\sqrt{3}\\-1}
+\end{align}
+$\vec{q}_1 $ lies in $1^{st}$ Quadrant 
+\begin{align}
+    So, \vec{B}=\myvec{\sqrt{3}\\1}
+\end{align}
+% If a line 
+% \begin{align}
+%     L:  \vec{x} = \vec{a} + \lambda \vec{m} 
+% \end{align}
+% touches a conic section at one point $\vec{q}$ then
+% \begin{align}
+% \vec{m}^T(\vec{V} \vec{q}+\vec{u}) = 0  \label{eq:EqP}
+% \end{align}
+% From equation \eqref{eq:A} $\Vec{V}$ is \myvec{1&0 \\ 0&1}  and $\vec{u}$=\myvec{0 \\ 0}\\
+% From equation of x-axis, \eqref{eq:A} and \eqref{eq:EqP} point of intersection is $\Vec{A}$ is given by
+% \begin{align}
+%     \myvec{0 & 2} (\myvec{1&0\\0&1}\vec{A}+\vec{u})&=0 \\
+%     \myvec{0&2}\vec{A}&=0 \\
+%     \implies \vec{A}&=\myvec{2\\ 0} 
+% \end{align}
+% similarly \\
+% from eq \eqref{eq:eqA},\eqref{eq:A} and \eqref{eq:EqP} point of intersection is \Vec{B} is given by
+% \begin{align}
+%     \myvec{1 & -\sqrt{3}} (\myvec{1&0\\0&1}\vec{B}+\vec{u})&=0 \\
+%     \myvec{1 & -\sqrt{3}}\vec{B}&=0 \\
+%     \implies \vec{B}&=\myvec{\sqrt{3} \\ 1 } 
+% \end{align}
 % Point $\vec{A}$ = \myvec{2 \\ 0} \\
 % Point $\vec{B}$ is on the line \myvec{1&-\sqrt{3}}\vec{x}=0 can be expressed as
 % \begin{align}
